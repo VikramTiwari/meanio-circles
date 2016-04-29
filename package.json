@@ -15,7 +15,7 @@
     "npm": "3.x"
   },
   "dependencies": {
-    "meanio-users": "^0.1.x"
+    "meanio-users": "git://github.com/linnovate/meanio-users.git"
   },
   "license": "MIT"
 }
