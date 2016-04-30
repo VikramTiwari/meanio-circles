@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 /*
  * Defining the Package
@@ -36,9 +36,11 @@ Circles.register(function(app, auth, database) {
 function registerCircle(name, parents) {
   var Circle = require('mongoose').model('Circle');
 
-  var query = { name: name };
+  var query = {
+    name: name
+  };
   var set = {};
-  if(parents) {
+  if (parents) {
     set.$push = {
       circles: parents
     };

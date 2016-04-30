@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
@@ -121,11 +121,11 @@ function buildTree(data, id, branch) {
 }
 
 function noParents(data, id) {
-  return data[id].parents.length === 0
+  return data[id].parents.length === 0;
 }
 
 function noChildren(data, id) {
-  return data[id].children.length === 0
+  return data[id].children.length === 0;
 }
 
 function hasChildren(data, id) {

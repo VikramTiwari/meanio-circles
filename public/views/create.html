@@ -1,5 +1,5 @@
 <div class="" data-ng-controller="CirclesController as vm">
-  	<h1>Create Circles</h1>
+  <h1>Create Circles</h1>
 
   <form name="circleForm" class="form-horizontal col-md-6" role="form" data-ng-submit="vm.create(circleForm.$valid)" novalidate>
     <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
@@ -16,12 +16,12 @@
     <div class="form-group">
       <label mean-token="'circles'" for="circles" class="col-md-2 control-label">Circles</label>
       <div class="col-md-10">
-         <ui-select multiple ng-model="vm.circle.circles">
-            <ui-select-match placeholder="Select circles...">{{$item}}</ui-select-match>
-            <ui-select-choices repeat="circle in vm.availableCircles | filter:$select.search">
-              {{circle}}
-            </ui-select-choices>
-          </ui-select>
+        <ui-select multiple ng-model="vm.circle.circles">
+          <ui-select-match placeholder="Select circles...">{{$item}}</ui-select-match>
+          <ui-select-choices repeat="circle in vm.availableCircles | filter:$select.search">
+            {{circle}}
+          </ui-select-choices>
+        </ui-select>
       </div>
     </div>
     <div class="form-group">

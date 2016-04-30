@@ -1,4 +1,4 @@
-'use strict';
+'use strict()';
 
 /* jshint -W098 */
 // The Package is past automatically as first parameter
@@ -16,7 +16,7 @@ module.exports = function(Circles, app, auth, database) {
   app.get('/api/circles/all', circles.hasCircle('admin'), circles.all);
 
   app.route('/api/circles/:name')
-      .post(circles.hasCircle('admin'), circles.create)
-      .put(circles.hasCircle('admin'), circles.update)
-      .get(circles.show);
+    .post(circles.hasCircle('admin'), circles.create)
+    .put(circles.hasCircle('admin'), circles.update)
+    .get(circles.show);
 };
